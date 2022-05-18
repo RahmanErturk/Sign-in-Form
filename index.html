@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Form</title>
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0px;
+        }
+        main {
+            max-width: 650px;
+            margin: 250px auto; 
+            position: relative;   
+        }
+        h1{
+            margin-bottom: 4px;
+        }
+        p, label, a {
+            font-size: 14px;
+        }
+        form {
+            box-sizing: border-box;
+            padding: 80px 50px;
+            width: 450px;
+            height: 450px;
+            display: block;
+            margin: 8px auto; 
+            /* border: 1px solid red; */
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+        label{
+            display: inline-block;
+            margin: 8px auto;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: red;
+        }
+        .forget-pass {
+            margin-top: 20px;
+        }
+        input {
+            width: 345px;
+            height: 30px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.082);
+            border-radius: 3px;
+        }
+        button {
+            display: inline-block;
+            border: none;
+            background-color: red;
+            height: 30px;
+            width: 350px;
+            color: white;
+            font-weight: bolder;
+            font-size: 14px;
+            border-radius: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+    <form action="https://formspree.io/f/mlezavbr">
+        <div>
+            <h1>Sign in</h1>
+            <p>Or <a href="#">register for an account</a></p>
+        </div>
+        <label> Email address <br>
+            <input type="email" name="email">
+        </label><br>
+
+        <label>
+            Password <br>
+            <input type="password" name="password">
+        </label><br>
+
+        <button>Sign in</button><br>
+
+        <a href="#" class="forget-pass">Forgot your password?</a>
+    </form>
+    </main>
+</body>
+</html>
